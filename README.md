@@ -7,7 +7,7 @@ Uploadigram,proto wesite
 Use the browser to access
 
 ```bash
-Github Pages is currently working on it.....
+https://leeyoww.github.io/uploadigram/
 ```
 
 ## Usage
