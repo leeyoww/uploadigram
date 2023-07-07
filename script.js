@@ -12,7 +12,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const postsContainer = document.getElementById("posts-container");
-const postsCollection = db.collection("dang");
+const postsCollection = db.collection("post-collection");
 // Add this code at the top of your JavaScript file
 const notificationContainer = document.getElementById("notification-container");
 
