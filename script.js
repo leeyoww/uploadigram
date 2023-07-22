@@ -45,9 +45,8 @@ function displayPosts() {
         contentElement.textContent = post.content;
         authorElement.textContent = "@" + post.author; // Replace "Author" with "@"
 
-        postElement.appendChild(titleElement);
-        postElement.appendChild(contentElement);
         postElement.appendChild(authorElement);
+        postElement.appendChild(contentElement);
         postElement.appendChild(likeButton);
         postElement.appendChild(likeCounter);
         postsContainer.appendChild(postElement);
@@ -200,13 +199,11 @@ function addComment(postId, content, author) {
 
 // Function to add a new post
 function addPost() {
-  const title = document.getElementById("title").value;
   const content = document.getElementById("content").value;
   const author = auth.currentUser.displayName; // Get the display name of the currently signed-in user
 
   postsCollection
     .add({
-      title: title,
       content: content,
       author: author,
       likes: 0, // Initialize the likes count to 0
